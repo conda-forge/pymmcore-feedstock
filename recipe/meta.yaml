@@ -1,5 +1,5 @@
 {% set name = "pymmcore" %}
-{% set version = "10.1.1.70.5" %}
+{% set version = "10.1.1.70.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymmcore-{{ version }}.tar.gz
-  sha256: 7cb9ed0aac35ce4dbaaff8b967d41205bc98b15c621b931d4a2a75474c6d37b0
+  sha256: d522b167daf0eb39076a0e83851ffa20ec1844d965cd3457350c6f1965f4bc47
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -41,7 +41,7 @@ about:
   home: https://github.com/micro-manager/pymmcore
   summary: Python bindings for MMCore, Micro-Manager's device control layer
   license: LGPL-2.1 AND BSD-3-Clause
-  license_file: 
+  license_file:
     - LICENSE.txt
     - MMDevice_license.txt
     - MMCore_license.txt
