@@ -3,7 +3,7 @@ About pymmcore
 
 Home: https://github.com/micro-manager/pymmcore
 
-Package license: LGPL-2.1 AND BSD-3-Clause
+Package license: LGPL-2.1-only AND BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymmcore-feedstock/blob/main/LICENSE.txt)
 
