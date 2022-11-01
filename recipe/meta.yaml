@@ -17,13 +17,11 @@ requirements:
   build:
     - {{ compiler('cxx') }}
   host:
-    - boost-cpp
     - numpy
     - pip
     - python
     - swig
   run:
-    - {{ pin_compatible('boost-cpp') }}
     - python
     - {{ pin_compatible('numpy') }}
 
