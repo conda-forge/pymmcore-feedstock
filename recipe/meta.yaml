@@ -1,5 +1,5 @@
 {% set name = "pymmcore" %}
-{% set version = "11.1.1.71.1" %}
+{% set version = "11.1.1.71.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymmcore-{{ version }}.tar.gz
-  sha256: bf59a99ff909cad9192ba5bd4b281deaaf6ef38dc5071a88f41386434beda501
+  sha256: 4338facb77f4a52b03ed2e23cb0f2834c0331d66aa55940adf874a2293118e07
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
