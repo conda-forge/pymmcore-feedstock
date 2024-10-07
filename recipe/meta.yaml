@@ -20,11 +20,11 @@ requirements:
   host:
     - numpy >=1.23.5
     - pip
-    - python >=3.9
+    - python
     - swig >=4.1
     - setuptools ==72.1.0
   run:
-    - python >=3.9
+    - python
     - numpy >=1.25
 
 test:
