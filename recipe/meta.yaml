@@ -24,7 +24,7 @@ requirements:
     - swig ==4.2.1
     - setuptools ==72.1.0
   run:
-    - python >=3.9
+    - python
     - numpy >=1.25
 
 test:
