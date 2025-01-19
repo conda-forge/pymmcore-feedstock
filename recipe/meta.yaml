@@ -1,27 +1,27 @@
 {% set name = "pymmcore" %}
-{% set version = "11.1.1.71.3" %}
+{% set version = "11.2.1.71.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymmcore-{{ version }}.tar.gz
-  sha256: e163bc4412d45e361405ecb80cd135be7648ae308b6dc579c0c7e12139227204
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pymmcore-{{ version }}.tar.gz
+  sha256: 4d9c1a35aace84ffce1534f0b48f2d4fadbee8dbb2758339bb375f7188569b95
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
   host:
-    - numpy >=1.23.5
+    - numpy >=2.0.0
     - pip
     - python
-    - swig >=4.1
+    - swig ==4.2.1
     - setuptools ==72.1.0
   run:
     - python
