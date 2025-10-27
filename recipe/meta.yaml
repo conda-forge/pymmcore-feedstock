@@ -21,11 +21,12 @@ requirements:
     - numpy >=2.0.0
     - pip
     - python
-    - swig ==4.2.1
-    - setuptools ==72.1.0
+    - swig ==4.4.0
+    - meson-python
+    - ninja
   run:
     - python
-    - numpy >=1.25
+    - numpy >=1.26
 
 test:
   imports:
