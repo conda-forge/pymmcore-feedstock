@@ -1,5 +1,5 @@
 {% set name = "pymmcore" %}
-{% set version = "11.9.0.73.0" %}
+{% set version = "11.10.0.74.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pymmcore-{{ version }}.tar.gz
-  sha256: 917c55c7e2374595ac22972a6c8421dcd52d3861e631ba7dc5cadbeb23db177d
+  sha256: c8a5dc46cfc852b87da7347069e246ad3021e4bf65d59d10aa30795a6deff0de
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -21,11 +21,12 @@ requirements:
     - numpy >=2.0.0
     - pip
     - python
-    - swig ==4.2.1
-    - setuptools ==72.1.0
+    - swig ==4.4.0
+    - meson-python
+    - ninja
   run:
     - python
-    - numpy >=1.25
+    - numpy >=1.26
 
 test:
   imports:
