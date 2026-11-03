@@ -1,13 +1,13 @@
 {% set name = "pymmcore" %}
-{% set version = "12.5.0.75.0" %}
+{% set version = "12.5.1.75.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pymmcore-{{ version }}.tar.gz
-  sha256: c78670ff99ea2a4424d41eea7f0f0b6059053689af7700a5b19815fa8dde8390
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pymmcore-{{ version }}.tar.gz
+  sha256: 30e7dc47d76fd774fc4b34b27c77565d6d523d819575dbb4731b04035c123d76
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
